@@ -1,193 +1,417 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Gabriel Mayor</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Mayor — Cybersecurity & Dev</title>
+  <meta name="description" content="Portfólio de Gabriel Mayor — Estudante de Ciência da Computação com foco em Cybersecurity">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <img src="./img/Foto.1.png" alt="Foto de Gabriel">
-        <h1>Gabriel Mayor</h1>
-        <h2>Estudante de Ciência da Computação</h2>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#recomendacoes">Recomendações</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
 
-    <main>
-        <section id="sobre">
-            <h3>Sobre mim</h3>
-            <p>
-                Sou Gabriel Moreira Souto Mayor, estudante de Ciência da Computação, movido pela curiosidade e pelo
-                desejo constante de evoluir dentro do universo da tecnologia. Tenho grande interesse em segurança da
-                informação, redes e no desenvolvimento de soluções criativas que tragam impacto positivo para as pessoas
-                e organizações. Acredito que conhecimento é um processo contínuo, por isso estou sempre estudando,
-                praticando e testando novas ideias, seja no ambiente acadêmico, em projetos pessoais ou em atividades de
-                aperfeiçoamento fora da sala de aula.
-            </p>
-        </section>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-bracket">[</span>GM<span class="logo-bracket">]</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-        <section id="formacao">
-            <h3>Formação</h3>
-            <p>
-                Bacharelado em Ciência da Computação<br>
-                Centro Universitário UniCEUB – Brasília, DF<br>
-                Início: Ago/2025 – Conclusão prevista: Dez/2028
-            </p>
-        </section>
-
-        <section id="projetos">
-    <h3>Projetos</h3>
-
-    <p>
-        <strong>Portfólio Pessoal</strong><br>
-        Este é o site que você está acessando agora! Criado em HTML e CSS, com design responsivo, menu fixo,
-        navegação suave, seções bem estruturadas e integração com links externos.<br><br>
-        • Tecnologias utilizadas: HTML5, CSS3<br>
-        • Funcionalidades: Menu fixo, rolagem suave, layout responsivo, seção de contatos com links para redes sociais.<br><br>
-        <a href="index.html" target="_blank">Ver projeto</a> |
-        <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank">Código no GitHub</a>
-    </p>
-
-    <br>
-
-    <p>
-        <strong>Projeto Focus</strong><br>
-        O projeto consiste no desenvolvimento de um aplicativo multiplataforma chamado <em>“Focus”</em>, criado
-        para ajudar estudantes e profissionais a combater a procrastinação e melhorar a gestão de tempo, rotina
-        e estudos. A proposta é reunir várias ferramentas de produtividade em um só lugar, funcionando como um
-        verdadeiro canivete suíço da organização pessoal.<br><br>
-
-        Além da versão mobile, o Focus também foi desenvolvido como um <strong>site (desenvolvimento web)</strong>
-        utilizando HTML, CSS e JavaScript, oferecendo as mesmas funcionalidades de forma acessível pelo navegador.<br><br>
-
-        Também desenvolvi uma versão do Focus como aplicativo utilizando </strong>Oracle APEX</strong>, integrado com
-        HTML, CSS e JavaScript, permitindo uma interface mais robusta e conectada a banco de dados.<br><br>
-
-        • Tecnologias utilizadas: HTML5, CSS3, JavaScript, Oracle APEX<br>
-        • Funcionalidades: Cronômetro Pomodoro, lista de tarefas, controle de metas, estatísticas de produtividade,
-          bloqueio de distrações e interface web responsiva.<br><br>
-
-        <a href="https://gabrielmsm2.github.io/Projeto-Focus/" target="_blank">Ver projeto</a> |
-        <a href="https://github.com/GabrielMSM2/Projeto-Focus" target="_blank">Código no GitHub</a>
-    </p>
-
-    <br>
-
-    <p>
-        <strong>Otimização de Código Python (Projeto Acadêmico)</strong><br>
-        Projeto desenvolvido para a disciplina de Organização e Arquitetura de Computadores no CEUB.
-        O objetivo foi analisar e melhorar o desempenho de códigos Python, identificando partes críticas e
-        reescrevendo trechos em linguagens de baixo nível, como C, C++ e Assembly, para aumentar a velocidade.<br><br>
-
-        O estudo incluiu análise de desempenho, uso de ferramentas de profiling, testes, comparações de resultados
-        e a aplicação de técnicas modernas de otimização. O trabalho demonstrou como reescrever pequenos trechos
-        pode gerar melhorias reais de performance.<br><br>
-
-        • Tecnologias e ferramentas: Python, C/C++, Assembly, Cython, Numba, PySpy, Scalene, Intel VTune<br>
-        • Foco do projeto: otimização de desempenho, identificação de gargalos, reescrita de trechos críticos,
-          análise arquitetural e validação de resultados.<br><br>
-
-        <a href="./img/Relatorio_Trabalho.pdf" target="_blank" title="Ver PDF do Trabalho"></a>
-
-    </p>
-
-</section>
-
-        <section id="experiencia">
-    <h3>Experiências Profissionais</h3>
-
-    <p>
-        <strong>Hospital das Clínicas e Pronto Socorro de Fraturas de Ceilândia</strong><br>
-        Auxiliar de Faturamento | Set/2022 - Mar/2023<br><br>
-        • Realização de análises cadastrais com foco em precisão e conformidade<br>
-        • Atualização contínua de dados internos e registros administrativos<br>
-        • Emissão ágil de documentos e notas fiscais<br>
-        • Colaboração direta para a redução de custos operacionais
-    </p>
-
-    <br>
-
-    <p>
-        <strong>Fundo Nacional de Desenvolvimento da Educação (FNDE)</strong><br>
-        Estagiário – DIRTI (Diretoria de Tecnologia da Informação) | 03/11/2025 - Atual<br><br>
-        • Atuação no desenvolvimento e manutenção de aplicações internas utilizando <strong>Oracle APEX (Low Code)</strong><br>
-        • Criação de soluções e automações com <strong>Microsoft Power Apps</strong><br>
-        • Suporte a sistemas internos e análise de demandas de usuários dos setores da DIRTI<br>
-        • Participação na modelagem de dados e melhorias de processos digitais da instituição
-    </p>
-
-</section>
-        <section id="cursos">
-            <h3>Cursos</h3>
-            <p>Introduction to Cybersecurity – Cisco</p>
-        </section>
-
-        <section id="recomendacoes">
-            <h3>Recomendações</h3>
-            <p>
-                Gabriel é um profissional dedicado, sempre comprometido com a qualidade do trabalho. – Vitor Amorim
-                <br>
-                <br>
-                Gabriel possui uma linha de pensamento muito rápida, aprende com bastante facilidade, um garoto
-                prodígio! - Gabriel Paganotto
-                <br>
-                <br>
-                Gabriel é uma pessoa empenhada e comprometida, sempre entregando suas tarefas com dedicação. Além de ser
-                extremamente altruísta, ele se destaca por sua confiabilidade e disposição em ajudar. Sua capacidade de
-                aprender rápido e colaborar com a todos o torna alguém valioso em qualquer contexto. - Fernando Medeiros
-                <br>
-                <br>
-            </p>
-        </section>
-    </main>
-
-    <footer id="contato">
-        <h3>Me siga nas redes</h3>
-        <div class="social-links">
-            <div class="social-item">
-                <a href="https://github.com/GabrielMSM2" target="_blank">
-                    <img src="./img/github.svg" alt="Github">
-                    <p>GitHub</p>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/in/gabrielmayor" target="_blank">
-                    <img src="./img/linkedin.svg" alt="Linkedin">
-                    <p>LinkedIn</p>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.youtube.com/channel/UC2-BeK1h3nIKD-KDiRcpxcA" target="_blank">
-                    <img src="./img/youtube.svg" alt="YouTube">
-                    <p>YouTube</p>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="./img/curriculo.pdf" target="_blank" title="Baixar Currículo">
-                    <img src="./img/curriculo.svg" alt="Currículo">
-                    <p>Currículo</p>
-                </a>
-            </div>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="dot-live"></span>
+        <span>Disponível para oportunidades</span>
+      </div>
+      <h1 class="hero-title reveal" style="animation-delay:0.1s">
+        Gabriel<br>
+        <span class="gradient-text">Mayor</span>
+      </h1>
+      <p class="hero-subtitle reveal" style="animation-delay:0.2s">
+        <span class="code-prompt">&gt;</span> Estudante de ciência da computação com foco em <span class="highlight">Segurança da Informação</span> e desenvolvimento de soluções resilientes.
+      </p>
+      <div class="hero-meta reveal" style="animation-delay:0.3s">
+        <div class="meta-item">
+          <span class="meta-label">Localização</span>
+          <span class="meta-value">Brasília, DF</span>
         </div>
-        <p>© 2025 Gabriel Mayor. Todos os direitos reservados.</p>
-    </footer>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Instituição</span>
+          <span class="meta-value">UniCEUB</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Trabalhando em</span>
+          <span class="meta-value">FNDE — DIRTI</span>
+        </div>
+      </div>
+      <div class="hero-cta reveal" style="animation-delay:0.4s">
+        <a href="#projetos" class="btn btn-primary">Ver projetos <span class="arrow">→</span></a>
+        <a href="#contato" class="btn btn-ghost">Contato</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Sobre mim</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <p class="lead">Movido pela curiosidade e pelo desejo constante de evoluir dentro do universo da tecnologia.</p>
+        <p>Sou Gabriel Moreira Souto Mayor, estudante de Ciência da Computação com grande interesse em segurança da informação, redes e no desenvolvimento de soluções criativas que tragam impacto positivo para as pessoas e organizações.</p>
+        <p>Acredito que conhecimento é um processo contínuo — por isso estou sempre estudando, praticando e testando novas ideias, seja no ambiente acadêmico, em projetos pessoais ou em atividades de aperfeiçoamento fora da sala de aula.</p>
+      </div>
+      <div class="sobre-card">
+        <div class="card-corner tl"></div>
+        <div class="card-corner tr"></div>
+        <div class="card-corner bl"></div>
+        <div class="card-corner br"></div>
+        <div class="card-row">
+          <span class="card-label">Status</span>
+          <span class="card-value"><span class="dot-live"></span>ativo</span>
+        </div>
+        <div class="card-row">
+          <span class="card-label">Formação</span>
+          <span class="card-value">Bacharelado em CC</span>
+        </div>
+        <div class="card-row">
+          <span class="card-label">Conclusão</span>
+          <span class="card-value">Dez / 2028</span>
+        </div>
+        <div class="card-row">
+          <span class="card-label">Stack principal</span>
+          <span class="card-value">Web + Security</span>
+        </div>
+        <div class="card-row">
+          <span class="card-label">Idiomas</span>
+          <span class="card-value">PT · EN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Skills & ferramentas</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L3 7v6c0 5 3.5 9 9 10 5.5-1 9-5 9-10V7l-9-5z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <h3>Cybersecurity</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-name"><span>Network Security</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Risk Assessment</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Compliance (PCI/GDPR/SOC)</span><span class="skill-level">Em progresso</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:55%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Linux & Hardening</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:60%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+          <h3>Desenvolvimento</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-name"><span>HTML5 & CSS3</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:50%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Python</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>C / C++ / Assembly</span><span class="skill-level">Básico</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:25%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-header">
+          <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+          </svg>
+          <h3>plataformas & dados</h3>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-name"><span>Oracle APEX (Low Code)</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Microsoft Power Apps</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>SQL / Modelagem de Dados</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:60%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name"><span>Git & GitHub</span><span class="skill-level">Intermediário</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--fill:70%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">projetos em destaque</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects">
+
+      <article class="project">
+        <div class="project-head">
+          <span class="project-label">Security Audit</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3 class="project-title">Botium Toys — Security Audit</h3>
+        <p class="project-desc">Auditoria interna de segurança simulada no escopo do Google Cybersecurity Certificate. Análise de controles, avaliação de conformidade (PCI DSS, GDPR, SOC) e recomendações estratégicas para redução de risco.</p>
+        <div class="project-tags">
+          <span>Risk Assessment</span>
+          <span>PCI DSS</span>
+          <span>GDPR</span>
+          <span>SOC</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/GabrielMSM2/botium-toys-security-audit" target="_blank" rel="noopener">
+            <span>Ver no GitHub</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="project-label">Produtividade</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h3 class="project-title">Projeto Focus</h3>
+        <p class="project-desc">Aplicativo multiplataforma contra procrastinação e para gestão de tempo. Reúne Pomodoro, lista de tarefas, metas e estatísticas — em versão web e também em Oracle APEX integrado a banco de dados.</p>
+        <div class="project-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Oracle APEX</span>
+        </div>
+        <div class="project-links">
+          <a href="https://gabrielmsm2.github.io/Projeto-Focus/" target="_blank" rel="noopener">
+            <span>Demo</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+          <a href="https://github.com/GabrielMSM2/Projeto-Focus" target="_blank" rel="noopener">
+            <span>GitHub</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="project-label">Acadêmico</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h3 class="project-title">Otimização de Código Python</h3>
+        <p class="project-desc">Projeto da disciplina de Organização e Arquitetura de Computadores (CEUB). Análise de desempenho e reescrita de trechos críticos em C, C++ e Assembly, com uso de profiling e técnicas modernas de otimização.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>C/C++</span>
+          <span>Assembly</span>
+          <span>Cython</span>
+          <span>Numba</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="disabled">
+            <span>Documentação em breve</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <span class="project-label">Portfólio</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h3 class="project-title">Este Portfólio</h3>
+        <p class="project-desc">Site pessoal desenvolvido com HTML5, CSS3 e JavaScript vanilla. Design responsivo, animações ao scroll, navegação suave e identidade visual voltada para cybersecurity.</p>
+        <div class="project-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/GabrielMSM2/Projeto-Portfolio" target="_blank" rel="noopener">
+            <span>GitHub</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Experiência -->
+  <section id="experiencia" class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">experiência</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">
+          <span class="period-current">atual</span>
+          <span>Nov/2025 — presente</span>
+        </div>
+        <h3 class="timeline-role">Estagiário — DIRTI (Diretoria de Tecnologia da Informação)</h3>
+        <p class="timeline-company">Fundo Nacional de Desenvolvimento da Educação (FNDE)</p>
+        <ul class="timeline-list">
+          <li>Desenvolvimento e manutenção de aplicações internas usando <strong>Oracle APEX (Low Code)</strong></li>
+          <li>Criação de soluções e automações com <strong>Microsoft Power Apps</strong></li>
+          <li>Suporte a sistemas internos e análise de demandas de usuários da DIRTI</li>
+          <li>Modelagem de dados e melhoria de processos digitais da instituição</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">
+          <span>Set/2022 — Mar/2023</span>
+        </div>
+        <h3 class="timeline-role">Auxiliar de Faturamento</h3>
+        <p class="timeline-company">Hospital das Clínicas e Pronto Socorro de Fraturas de Ceilândia</p>
+        <ul class="timeline-list">
+          <li>Análises cadastrais com foco em precisão e conformidade</li>
+          <li>Atualização contínua de dados internos e registros administrativos</li>
+          <li>Emissão ágil de documentos e notas fiscais</li>
+          <li>Colaboração direta na redução de custos operacionais</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="certs">
+      <h3 class="certs-title">certificações & cursos</h3>
+      <div class="certs-grid">
+        <div class="cert">
+          <span class="cert-status">em andamento</span>
+          <h4>Google Cybersecurity Certificate</h4>
+          <p>Google · Coursera</p>
+        </div>
+        <div class="cert">
+          <span class="cert-status done">concluído</span>
+          <h4>Introduction to Cybersecurity</h4>
+          <p>Cisco Networking Academy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section section-contact">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">vamos conversar</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-content">
+      <h3 class="contact-big">pronto para colaborar em<br><span class="gradient-text">próximos desafios.</span></h3>
+      <p class="contact-desc">Aberto a oportunidades em cybersecurity, desenvolvimento e projetos que combinem as duas áreas. Me chama nas redes ou pelo e-mail.</p>
+      <div class="contact-links">
+        <a href="https://github.com/GabrielMSM2" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          <div><span class="link-label">GitHub</span><span class="link-handle">@GabrielMSM2</span></div>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/gabrielmayor" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V9h3v10zM6.5 7.5a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5zM19 19h-3v-5.3c0-3.1-3.5-2.9-3.5 0V19h-3V9h3v1.8c1.4-2.6 6.5-2.8 6.5 2.5V19z"/></svg>
+          <div><span class="link-label">LinkedIn</span><span class="link-handle">in/gabrielmayor</span></div>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.youtube.com/channel/UC2-BeK1h3nIKD-KDiRcpxcA" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23 7s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.7 3.5 12 3.5 12 3.5s-4.7 0-7.8.2c-.4.1-1.4.1-2.2 1C1.2 5.4 1 7 1 7s-.2 1.9-.2 3.8v1.8C.8 14.5 1 16.4 1 16.4s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.2 7.6.2s4.7 0 7.8-.2c.4-.1 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.8C23.2 8.9 23 7 23 7zM9.7 14.6V8.2l6.1 3.2-6.1 3.2z"/></svg>
+          <div><span class="link-label">YouTube</span><span class="link-handle">Canal do Gabriel</span></div>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="./img/curriculo.pdf" target="_blank" rel="noopener" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+          <div><span class="link-label">Currículo</span><span class="link-handle">Download PDF</span></div>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-logo"><span class="logo-bracket">[</span>GM<span class="logo-bracket">]</span></span>
+      <p>© 2025 Gabriel Mayor. Todos os direitos reservados.</p>
+      <p class="footer-built">built with <span class="heart">❤</span> + ☕ in Brasília</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
-
 </html>
-
-
